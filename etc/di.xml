@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Product">
+        <plugin disabled="false" name="Funami_ChangeProductImages_Plugin_Magento_Catalog_Model_Product" sortOrder="10" type="Funami\ChangeProductImages\Plugin\Magento\Catalog\Model\Product"/>
+    </type>
+    <type name="Magento\Catalog\Model\Category">
+        <plugin disabled="false" name="Funami_ChangeProductImages_Plugin_Magento_Catalog_Model_Category" sortOrder="10" type="Funami\ChangeProductImages\Plugin\Magento\Catalog\Model\Category"/>
+    </type>
+    <type name="Magento\Checkout\CustomerData\AbstractItem">
+        <plugin disabled="false" name="Funami_ChangeProductImages_Plugin_Magento_Checkout_CustomerData_AbstractItem" sortOrder="10" type="Funami\ChangeProductImages\Plugin\Magento\Checkout\CustomerData\AbstractItem"/>
+    </type>
+	<type name="Magento\Framework\Console\CommandList">
+		<arguments>
+			<argument name="commands" xsi:type="array">
+				<item name="createCategory" xsi:type="object">Funami\ChangeProductImages\Console\Command\CreateCategory</item>
+				<item name="createProducts" xsi:type="object">Funami\ChangeProductImages\Console\Command\CreateProducts</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

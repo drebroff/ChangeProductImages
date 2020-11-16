@@ -1,0 +1,22 @@
+{
+    "name": "funami/module-changeproductimages",
+    "description": "Change product images from CDN",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Dmitrij Rebrov",
+            "email": "dmitrij.rebrov@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Funami\\ChangeProductImages\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
