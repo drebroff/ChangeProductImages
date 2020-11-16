@@ -14,9 +14,6 @@ ___
 ## Main Functionalities
 Change product images from CDN API
 
-## Installation
-\* = in production please use the `--keep-generated` option
-
 ### Files
 
  - Unzip the zip file in `app/code/Funami`
